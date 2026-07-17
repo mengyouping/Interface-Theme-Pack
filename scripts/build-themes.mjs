@@ -5,7 +5,7 @@ import { THEMES, TARGETS, sourceDir, outputDir, packageName } from './lib/theme-
 
 const isMain = process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url);
 const readJson = async (file) => JSON.parse(await fs.readFile(file, 'utf8'));
-const writeJson = async (file, value) => fs.writeFile(file, `${JSON.stringify(value, null, 2)}\n`, 'utf8');
+const writeJson = async (file, value) => fs.writeFile(file, `${JSON.stringify(value)}\n`, 'utf8');
 
 function verificationFor(targetId) {
   return {
@@ -35,6 +35,25 @@ function targetOptions(targetId, tokens) {
   };
 }
 
+function compactTargetCss(source, targetId) {
+  const c = source.tokens.colors;
+  const host = `html.codedrobe-host-${targetId}`;
+  const platform = targetId === 'codex'
+    ? `${host} [data-testid="composer"],${host} [contenteditable="true"],${host} textarea{box-shadow:0 0 0 1px ${c.border},0 18px 48px rgba(0,0,0,.28)}${host} pre{border-left:3px solid ${c.accent}}`
+    : `${host} [contenteditable="true"],${host} textarea{box-shadow:0 0 0 1px ${c.border},0 16px 44px rgba(0,0,0,.26)}${host} aside{border-right:1px solid ${c.border}}`;
+  return `/* ${source.metadata.displayName} / ${targetId} / 原创致敬主题 */
+${host}{--t-bg:${c.background};--t-s:${c.surface};--t-text:${c.text};--t-muted:${c.muted};--t-a:${c.accent};--t-a2:${c.accent2};--t-b:${c.border};color-scheme:dark}
+${host} body{color:var(--t-text);background:radial-gradient(circle at 82% 12%,color-mix(in srgb,var(--t-a2) 18%,transparent),transparent 38%),linear-gradient(135deg,var(--t-bg),var(--t-s)) fixed}
+${host} body::before{content:"";position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 47px,color-mix(in srgb,var(--t-b) 18%,transparent) 48px),repeating-linear-gradient(0deg,transparent 0 47px,color-mix(in srgb,var(--t-b) 18%,transparent) 48px);opacity:.55}
+${host} main,${host} [role="main"]{background:color-mix(in srgb,var(--t-bg) 78%,transparent);backdrop-filter:blur(14px)}${host} aside,${host} nav{background:color-mix(in srgb,var(--t-s) 88%,transparent);backdrop-filter:blur(18px)}
+${host} button,${host} input,${host} textarea,${host} [contenteditable="true"],${host} [role="textbox"]{color:var(--t-text);border-color:var(--t-b);background:color-mix(in srgb,var(--t-s) 91%,transparent)}
+${host} button:hover,${host} [aria-selected="true"],${host} [data-state="active"]{border-color:var(--t-a2);background:color-mix(in srgb,var(--t-a) 18%,var(--t-s))}${host} :focus-visible{outline:2px solid var(--t-a2);outline-offset:2px}
+${host} a{color:var(--t-a2)}${host} pre,${host} code{background:${c.code};color:var(--t-text);border-color:var(--t-b)}${host} blockquote{border-left-color:var(--t-a);color:var(--t-muted)}${host} .codedrobe-theme-emblem{pointer-events:none;background:var(--codedrobe-image-emblem) center/contain no-repeat}
+${platform}
+@media (prefers-reduced-motion:reduce){${host} *,${host} *::before,${host} *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+`;
+}
+
 function packageBundle(source, target, themeId) {
   const options = targetOptions(target.id, source.tokens);
   return {
@@ -51,7 +70,7 @@ function packageBundle(source, target, themeId) {
     },
     targets: {
       [target.id]: {
-        css: source.css[target.id],
+        css: compactTargetCss(source, target.id),
         ...(options ? { options } : {}),
         verification: verificationFor(target.id)
       }

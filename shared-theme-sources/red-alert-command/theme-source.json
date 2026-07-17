@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "red-alert-command",
+    "displayName": "红色警戒指挥部",
+    "englishName": "Red Alert Command",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "mengyouping",
+    "tagline": "雷达扫过战术网格，指令必须清晰。",
+    "description": "以雷达扫描、工业铆钉、战略网格与终端刻度构成的原创复古指挥中心主题。",
+    "originality": "所有图形、配色、CSS 与文档均为本仓库原创，不含第三方角色、Logo、截图、台词、音乐或官方界面。",
+    "forbiddenElements": [
+      "第三方角色与角色剪影",
+      "第三方 Logo 与商标图形",
+      "影视或游戏截图",
+      "官方 UI、地图、单位图标与字体复刻"
+    ],
+    "compatibility": {
+      "codex": "NOT_RUN",
+      "workbuddy": "NOT_RUN",
+      "restore": "NOT_RUN"
+    },
+    "coreBaseline": "@codedrobe/core@0.3.0"
+  },
+  "tokens": {
+    "colors": {
+      "background": "#111813",
+      "surface": "#1E2A20",
+      "surfaceAlt": "#303C31",
+      "text": "#DDE9D8",
+      "muted": "#91A08D",
+      "accent": "#D63D3D",
+      "accent2": "#4AB7A4",
+      "border": "#4A5A4C",
+      "code": "#0A100C",
+      "glow": "#5ED1B7"
+    },
+    "radius": {
+      "small": "8px",
+      "medium": "14px",
+      "large": "22px"
+    },
+    "opacity": {
+      "panel": 0.88,
+      "overlay": 0.72
+    },
+    "shadow": {
+      "panel": "0 18px 48px rgba(0,0,0,.28)"
+    },
+    "motion": {
+      "duration": "180ms"
+    }
+  },
+  "assets": {
+    "heroSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1600 1000\"><defs><linearGradient id=\"g\" x2=\"1\" y2=\"1\"><stop stop-color=\"#111813\"/><stop offset=\"1\" stop-color=\"#1E2A20\"/></linearGradient></defs><rect width=\"1600\" height=\"1000\" fill=\"url(#g)\"/><circle cx=\"1240\" cy=\"250\" r=\"380\" fill=\"#4AB7A4\" opacity=\".12\"/><path d=\"M0 820Q400 650 800 820T1600 820\" fill=\"none\" stroke=\"#D63D3D\" opacity=\".22\" stroke-width=\"12\"/></svg>\n",
+    "textureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><rect width=\"512\" height=\"512\" fill=\"#111813\"/><path d=\"M0 64H512M0 192H512M0 320H512M0 448H512M64 0V512M192 0V512M320 0V512M448 0V512\" stroke=\"#4A5A4C\" opacity=\".18\"/></svg>\n",
+    "emblemSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><rect width=\"512\" height=\"512\" rx=\"96\" fill=\"#1E2A20\"/><circle cx=\"256\" cy=\"256\" r=\"170\" fill=\"none\" stroke=\"#4AB7A4\" stroke-width=\"28\"/><path d=\"M148 320L256 142L364 320Z\" fill=\"none\" stroke=\"#D63D3D\" stroke-width=\"24\" stroke-linejoin=\"round\"/></svg>\n",
+    "ambientSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1600 1000\"><circle cx=\"180\" cy=\"160\" r=\"360\" fill=\"#D63D3D\" opacity=\".12\"/><circle cx=\"1420\" cy=\"840\" r=\"460\" fill=\"#4AB7A4\" opacity=\".1\"/></svg>\n",
+    "emblemImage": {
+      "filename": "emblem.png",
+      "mimeType": "image/png",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB/0lEQVR42u2bsW0DMQxFbeE2cO0gteFBvEkGSKogpZEqHsCbeJBs4NozJNUBxsE6kdT/lIyjuiCnE/8TSVE6ef2ye/1bLbil1cJbAAgAASAABIAAsOA2eA+4Px2Lz/y+f7nZs2ZXghLBLYHQACCEe4CAA2AIZ4KAAkDFt2eegAGYM7rGWNZ7YQDYBrLHqQKQM4qZtdFjwgsh9hqOfr/ZAx7NhNS4y2ab/d/hdqWPXw3AMvicaCsMBITUq/hSv1wu0NYhAzMmcwLmZnbaZ/x77IMutFLt7GvEH27XolvnnrlstuLxNXYmxuxPxUuEl0B8fL5RVoaBMfuWrJ5rVuH701EEJjFnv1a8pvrrohCyZnut+J/vM2wc2omQdfa9hKs8YGoUq9yt3fBMn5HkrcRwf8vsS8TfvxcVbu6Hoq220267wWcS3xxATqTnsXjzEGglvAsPuBfdQnwXAFqKhwJgLFHMMlsFwFJg9LCqUDdDnvsCpldBAaDc0nOchHI3Zi6QxL41LMUArJm6FoK1v9TeqhCQeMEoQivkUR/07KsBaLwgd7BZApF7RhP3GjurS+G5s7fR6NxRNyLh1S7JCRFbJSOsWdvjy1B8G0R/Hveo65HjJg/jen5/3BCJO0JxSyzuCcZN0d6z9lPeFe4hvrsE0FuLX4wEgAAQAAJAAFhw+wfbyzsEEa92nwAAAABJRU5ErkJggg=="
+    }
+  },
+  "css": {
+    "codex": "/* 红色警戒指挥部 / codex / 原创致敬主题 */\nhtml.codedrobe-host-codex{--tribute-bg:#111813;--tribute-surface:#1E2A20;--tribute-text:#DDE9D8;--tribute-muted:#91A08D;--tribute-accent:#D63D3D;--tribute-accent-2:#4AB7A4;--tribute-border:#4A5A4C;color-scheme:dark}\nhtml.codedrobe-host-codex body{color:var(--tribute-text);background:radial-gradient(circle at 82% 12%,color-mix(in srgb,var(--tribute-accent-2) 18%,transparent),transparent 38%),linear-gradient(135deg,var(--tribute-bg),var(--tribute-surface)) fixed}\nhtml.codedrobe-host-codex body::before{content:\"\";position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px),repeating-linear-gradient(0deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px);opacity:.55}\nhtml.codedrobe-host-codex main,html.codedrobe-host-codex [role=\"main\"]{background:color-mix(in srgb,var(--tribute-bg) 78%,transparent);backdrop-filter:blur(14px) saturate(118%)}\nhtml.codedrobe-host-codex aside,html.codedrobe-host-codex nav{background:color-mix(in srgb,var(--tribute-surface) 88%,transparent);backdrop-filter:blur(18px) saturate(120%)}\nhtml.codedrobe-host-codex button,html.codedrobe-host-codex input,html.codedrobe-host-codex textarea,html.codedrobe-host-codex [contenteditable=\"true\"],html.codedrobe-host-codex [role=\"textbox\"]{color:var(--tribute-text);border-color:var(--tribute-border);background:color-mix(in srgb,var(--tribute-surface) 91%,transparent)}\nhtml.codedrobe-host-codex button:hover,html.codedrobe-host-codex [aria-selected=\"true\"],html.codedrobe-host-codex [data-state=\"active\"]{border-color:var(--tribute-accent-2);background:color-mix(in srgb,var(--tribute-accent) 18%,var(--tribute-surface))}\nhtml.codedrobe-host-codex :focus-visible{outline:2px solid var(--tribute-accent-2);outline-offset:2px}html.codedrobe-host-codex a{color:var(--tribute-accent-2)}\nhtml.codedrobe-host-codex pre,html.codedrobe-host-codex code{background:#0A100C;color:var(--tribute-text);border-color:var(--tribute-border)}\nhtml.codedrobe-host-codex blockquote{border-left-color:var(--tribute-accent);color:var(--tribute-muted)}html.codedrobe-host-codex ::selection{background:color-mix(in srgb,var(--tribute-accent) 52%,transparent);color:var(--tribute-text)}\nhtml.codedrobe-host-codex .codedrobe-theme-emblem{pointer-events:none;background:var(--codedrobe-image-emblem) center/contain no-repeat}\nhtml.codedrobe-host-codex [data-testid=\"composer\"],html.codedrobe-host-codex [contenteditable=\"true\"],html.codedrobe-host-codex textarea{box-shadow:0 0 0 1px #4A5A4C,0 18px 48px rgba(0,0,0,.28)}\nhtml.codedrobe-host-codex pre{border-left:3px solid #D63D3D}\n@media (prefers-reduced-motion:reduce){html.codedrobe-host-codex *,html.codedrobe-host-codex *::before,html.codedrobe-host-codex *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}\n",
+    "workbuddy": "/* 红色警戒指挥部 / workbuddy / 原创致敬主题 */\nhtml.codedrobe-host-workbuddy{--tribute-bg:#111813;--tribute-surface:#1E2A20;--tribute-text:#DDE9D8;--tribute-muted:#91A08D;--tribute-accent:#D63D3D;--tribute-accent-2:#4AB7A4;--tribute-border:#4A5A4C;color-scheme:dark}\nhtml.codedrobe-host-workbuddy body{color:var(--tribute-text);background:radial-gradient(circle at 82% 12%,color-mix(in srgb,var(--tribute-accent-2) 18%,transparent),transparent 38%),linear-gradient(135deg,var(--tribute-bg),var(--tribute-surface)) fixed}\nhtml.codedrobe-host-workbuddy body::before{content:\"\";position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px),repeating-linear-gradient(0deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px);opacity:.55}\nhtml.codedrobe-host-workbuddy main,html.codedrobe-host-workbuddy [role=\"main\"]{background:color-mix(in srgb,var(--tribute-bg) 78%,transparent);backdrop-filter:blur(14px) saturate(118%)}\nhtml.codedrobe-host-workbuddy aside,html.codedrobe-host-workbuddy nav{background:color-mix(in srgb,var(--tribute-surface) 88%,transparent);backdrop-filter:blur(18px) saturate(120%)}\nhtml.codedrobe-host-workbuddy button,html.codedrobe-host-workbuddy input,html.codedrobe-host-workbuddy textarea,html.codedrobe-host-workbuddy [contenteditable=\"true\"],html.codedrobe-host-workbuddy [role=\"textbox\"]{color:var(--tribute-text);border-color:var(--tribute-border);background:color-mix(in srgb,var(--tribute-surface) 91%,transparent)}\nhtml.codedrobe-host-workbuddy button:hover,html.codedrobe-host-workbuddy [aria-selected=\"true\"],html.codedrobe-host-workbuddy [data-state=\"active\"]{border-color:var(--tribute-accent-2);background:color-mix(in srgb,var(--tribute-accent) 18%,var(--tribute-surface))}\nhtml.codedrobe-host-workbuddy :focus-visible{outline:2px solid var(--tribute-accent-2);outline-offset:2px}html.codedrobe-host-workbuddy a{color:var(--tribute-accent-2)}\nhtml.codedrobe-host-workbuddy pre,html.codedrobe-host-workbuddy code{background:#0A100C;color:var(--tribute-text);border-color:var(--tribute-border)}\nhtml.codedrobe-host-workbuddy blockquote{border-left-color:var(--tribute-accent);color:var(--tribute-muted)}html.codedrobe-host-workbuddy ::selection{background:color-mix(in srgb,var(--tribute-accent) 52%,transparent);color:var(--tribute-text)}\nhtml.codedrobe-host-workbuddy .codedrobe-theme-emblem{pointer-events:none;background:var(--codedrobe-image-emblem) center/contain no-repeat}\nhtml.codedrobe-host-workbuddy [contenteditable=\"true\"],html.codedrobe-host-workbuddy textarea{box-shadow:0 0 0 1px #4A5A4C,0 16px 44px rgba(0,0,0,.26)}\nhtml.codedrobe-host-workbuddy aside{border-right:1px solid #4A5A4C}\n@media (prefers-reduced-motion:reduce){html.codedrobe-host-workbuddy *,html.codedrobe-host-workbuddy *::before,html.codedrobe-host-workbuddy *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}\n"
+  }
+}
