@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "generatedBy": "scripts/validate-themes.mjs",
+  "coreBaseline": "@codedrobe/core@0.3.0",
+  "nodeBaseline": ">=22.4",
+  "packageFormat": "UTF-8 JSON",
+  "packages": [
+    {
+      "themeId": "detective-noir-codex",
+      "displayName": "侦探暗夜 · Codex",
+      "target": "codex",
+      "path": "Codex主题包/侦探暗夜/detective-noir-codex.codedrobe-theme",
+      "bytes": 8074,
+      "sha256": "61dcc561ee6a18e1792af163a99b64cd7c71e3fbaff5e517a29296568d465199",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "detective-noir-workbuddy",
+      "displayName": "侦探暗夜 · WorkBuddy",
+      "target": "workbuddy",
+      "path": "WorkBuddy主题包/侦探暗夜/detective-noir-workbuddy.codedrobe-theme",
+      "bytes": 7956,
+      "sha256": "de5825792d8ffae9da6647481305bfaca03044a9c3d974c1e1f5c91eb26a24c9",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "creed-of-shadows-codex",
+      "displayName": "鹰羽信条 · Codex",
+      "target": "codex",
+      "path": "Codex主题包/鹰羽信条/creed-of-shadows-codex.codedrobe-theme",
+      "bytes": 9034,
+      "sha256": "94ec7a76d69ed63895b3391c28bb96920e0d6bf782770edd3c6c4bf99d839eaf",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "creed-of-shadows-workbuddy",
+      "displayName": "鹰羽信条 · WorkBuddy",
+      "target": "workbuddy",
+      "path": "WorkBuddy主题包/鹰羽信条/creed-of-shadows-workbuddy.codedrobe-theme",
+      "bytes": 8916,
+      "sha256": "f1794ae45fde6659ca2880e89fa7da058fa4283043264a1b8190f3c24e203ecc",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "spirit-bathhouse-codex",
+      "displayName": "灵境汤屋 · Codex",
+      "target": "codex",
+      "path": "Codex主题包/灵境汤屋/spirit-bathhouse-codex.codedrobe-theme",
+      "bytes": 8875,
+      "sha256": "e251171f8fb7aa17d7b1ef9b56e5645ee229981eadaa5a86f528ac847b4a3e24",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "spirit-bathhouse-workbuddy",
+      "displayName": "灵境汤屋 · WorkBuddy",
+      "target": "workbuddy",
+      "path": "WorkBuddy主题包/灵境汤屋/spirit-bathhouse-workbuddy.codedrobe-theme",
+      "bytes": 8757,
+      "sha256": "44c28411245055ddbac005c51c4eb7d7d48a7c214d36dcdb89414ef47e82f702",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "red-alert-command-codex",
+      "displayName": "红色警戒指挥部 · Codex",
+      "target": "codex",
+      "path": "Codex主题包/红色警戒指挥部/red-alert-command-codex.codedrobe-theme",
+      "bytes": 9156,
+      "sha256": "c24af1bb91a403481771205f84666e4c805bfe60472e97dacd18a0189f565cd0",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "red-alert-command-workbuddy",
+      "displayName": "红色警戒指挥部 · WorkBuddy",
+      "target": "workbuddy",
+      "path": "WorkBuddy主题包/红色警戒指挥部/red-alert-command-workbuddy.codedrobe-theme",
+      "bytes": 9038,
+      "sha256": "a4b1c6f167c403c20ede5faee125344894c5027e50558613d84ac5fb8e883c25",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "stellar-dominion-codex",
+      "displayName": "星海霸权 · Codex",
+      "target": "codex",
+      "path": "Codex主题包/星海霸权/stellar-dominion-codex.codedrobe-theme",
+      "bytes": 8440,
+      "sha256": "4f1771d20474e6c92b60e33692a5215504fc360150b6ed10a531505a8625f533",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    },
+    {
+      "themeId": "stellar-dominion-workbuddy",
+      "displayName": "星海霸权 · WorkBuddy",
+      "target": "workbuddy",
+      "path": "WorkBuddy主题包/星海霸权/stellar-dominion-workbuddy.codedrobe-theme",
+      "bytes": 8322,
+      "sha256": "6e5ad82d40eb7e6a9ff7a61b2bdc557ea8e3f1a23383c349b49fbe0afc770e47",
+      "staticValidation": "PASS",
+      "clientVerification": "NOT_RUN",
+      "restoreVerification": "NOT_RUN"
+    }
+  ]
+}
