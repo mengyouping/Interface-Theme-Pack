@@ -1,0 +1,43 @@
+name: 主题包质量门禁
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main, agent/build-original-tribute-themes]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  quality:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 检出仓库
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 配置 Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.16.0'
+      - name: 执行完整构建与校验
+        run: npm run check
+      - name: 提交实施分支生成产物
+        if: github.event_name == 'push' && github.ref_name == 'agent/build-original-tribute-themes'
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md build-report.json docs/构建验证报告.md Codex主题包 WorkBuddy主题包
+          if git diff --cached --quiet; then
+            echo "生成产物无变化"
+          else
+            git commit -m "构建：生成十套原创致敬双端主题包"
+            git push
+          fi
+      - name: 检查未提交的生成差异
+        if: github.ref_name != 'agent/build-original-tribute-themes'
+        run: git diff --exit-code

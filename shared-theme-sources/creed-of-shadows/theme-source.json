@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "metadata": {
+    "id": "creed-of-shadows",
+    "displayName": "鹰羽信条",
+    "englishName": "Creed of Shadows",
+    "version": "1.0.0",
+    "license": "MIT",
+    "author": "mengyouping",
+    "tagline": "在石灰与鹰羽之间保持隐秘秩序。",
+    "description": "以古城墙、鹰羽弧线、手稿网格与原创三角徽记构成的历史隐秘主题。",
+    "originality": "所有图形、配色、CSS 与文档均为本仓库原创，不含第三方角色、Logo、截图、台词、音乐或官方界面。",
+    "forbiddenElements": [
+      "第三方角色与角色剪影",
+      "第三方 Logo 与商标图形",
+      "影视或游戏截图",
+      "官方 UI、地图、单位图标与字体复刻"
+    ],
+    "compatibility": {
+      "codex": "NOT_RUN",
+      "workbuddy": "NOT_RUN",
+      "restore": "NOT_RUN"
+    },
+    "coreBaseline": "@codedrobe/core@0.3.0"
+  },
+  "tokens": {
+    "colors": {
+      "background": "#171614",
+      "surface": "#25231F",
+      "surfaceAlt": "#EEE9DE",
+      "text": "#F5F0E6",
+      "muted": "#B5AA99",
+      "accent": "#A72F35",
+      "accent2": "#B28B57",
+      "border": "#5D554A",
+      "code": "#11100E",
+      "glow": "#D3B77F"
+    },
+    "radius": {
+      "small": "8px",
+      "medium": "14px",
+      "large": "22px"
+    },
+    "opacity": {
+      "panel": 0.88,
+      "overlay": 0.72
+    },
+    "shadow": {
+      "panel": "0 18px 48px rgba(0,0,0,.28)"
+    },
+    "motion": {
+      "duration": "180ms"
+    }
+  },
+  "assets": {
+    "heroSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1600 1000\"><defs><linearGradient id=\"g\" x2=\"1\" y2=\"1\"><stop stop-color=\"#171614\"/><stop offset=\"1\" stop-color=\"#25231F\"/></linearGradient></defs><rect width=\"1600\" height=\"1000\" fill=\"url(#g)\"/><circle cx=\"1240\" cy=\"250\" r=\"380\" fill=\"#B28B57\" opacity=\".12\"/><path d=\"M0 820Q400 650 800 820T1600 820\" fill=\"none\" stroke=\"#A72F35\" opacity=\".22\" stroke-width=\"12\"/></svg>\n",
+    "textureSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><rect width=\"512\" height=\"512\" fill=\"#171614\"/><path d=\"M0 64H512M0 192H512M0 320H512M0 448H512M64 0V512M192 0V512M320 0V512M448 0V512\" stroke=\"#5D554A\" opacity=\".18\"/></svg>\n",
+    "emblemSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 512 512\"><rect width=\"512\" height=\"512\" rx=\"96\" fill=\"#25231F\"/><circle cx=\"256\" cy=\"256\" r=\"170\" fill=\"none\" stroke=\"#B28B57\" stroke-width=\"28\"/><path d=\"M148 320L256 142L364 320Z\" fill=\"none\" stroke=\"#A72F35\" stroke-width=\"24\" stroke-linejoin=\"round\"/></svg>\n",
+    "ambientSvg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 1600 1000\"><circle cx=\"180\" cy=\"160\" r=\"360\" fill=\"#A72F35\" opacity=\".12\"/><circle cx=\"1420\" cy=\"840\" r=\"460\" fill=\"#B28B57\" opacity=\".1\"/></svg>\n",
+    "emblemImage": {
+      "filename": "emblem.png",
+      "mimeType": "image/png",
+      "base64": "iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAB60lEQVR42u2aPW4CMRCFFysdqdNGIuIOHIYD0NNT0NNzAA7DKThA6lAnVSJivOys582P2ZkKIbT2+2bm4bVmtvx4/+4mHKmbeASAABAAAkAAmHK8WCx62KwGf7M9nlX2MtM6CFFEW8AQB8ARrgFCDABSuCQEOAAp4VIgoABQ5jb0nOvp0s3XCwgEGIBHm+ZsNH/u9XT5+4yAwAYwlC1UqR42q3/ib2P39WkDQCrrfbF/fbv7br5esNYTOQlqizc5Cmu5fZ941H6S99LvE1/q+xoIqWXxpfXGQmjubZDj+GwA1tkviedWAasCtsezmuObX4hoZX+M6SGqIHGyr5V5dN83ZYKS4l0BoJqeCYC8n7T+77ktSfGB5DHzWtk3B2At3qUJaoo3BWBlei4AeBFvAkDzmOsOgAfTMwPgUTwZQH7IQF2HIcWX9kQ5sCWr7FtnXg2AN9ODAaC0gde+rwIw9gVIU3xt/7NbYKwZesp8FQAqVU3T42QfYoL5BrybHhvAo4sHbdPjZr+6AkqLtCie1QKUxbyLhx2ESoMLmuI5wZ4Q6St91AwPRThnHdiM0C2IfHABOSOEei4cwC+EoakNxJQYSjwcgESPSooXASAJoqlRWSSIpoelLfvbJYCnuRAJAAEgAASAABAA2o8fM+L+C32mQ38AAAAASUVORK5CYII="
+    }
+  },
+  "css": {
+    "codex": "/* 鹰羽信条 / codex / 原创致敬主题 */\nhtml.codedrobe-host-codex{--tribute-bg:#171614;--tribute-surface:#25231F;--tribute-text:#F5F0E6;--tribute-muted:#B5AA99;--tribute-accent:#A72F35;--tribute-accent-2:#B28B57;--tribute-border:#5D554A;color-scheme:dark}\nhtml.codedrobe-host-codex body{color:var(--tribute-text);background:radial-gradient(circle at 82% 12%,color-mix(in srgb,var(--tribute-accent-2) 18%,transparent),transparent 38%),linear-gradient(135deg,var(--tribute-bg),var(--tribute-surface)) fixed}\nhtml.codedrobe-host-codex body::before{content:\"\";position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px),repeating-linear-gradient(0deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px);opacity:.55}\nhtml.codedrobe-host-codex main,html.codedrobe-host-codex [role=\"main\"]{background:color-mix(in srgb,var(--tribute-bg) 78%,transparent);backdrop-filter:blur(14px) saturate(118%)}\nhtml.codedrobe-host-codex aside,html.codedrobe-host-codex nav{background:color-mix(in srgb,var(--tribute-surface) 88%,transparent);backdrop-filter:blur(18px) saturate(120%)}\nhtml.codedrobe-host-codex button,html.codedrobe-host-codex input,html.codedrobe-host-codex textarea,html.codedrobe-host-codex [contenteditable=\"true\"],html.codedrobe-host-codex [role=\"textbox\"]{color:var(--tribute-text);border-color:var(--tribute-border);background:color-mix(in srgb,var(--tribute-surface) 91%,transparent)}\nhtml.codedrobe-host-codex button:hover,html.codedrobe-host-codex [aria-selected=\"true\"],html.codedrobe-host-codex [data-state=\"active\"]{border-color:var(--tribute-accent-2);background:color-mix(in srgb,var(--tribute-accent) 18%,var(--tribute-surface))}\nhtml.codedrobe-host-codex :focus-visible{outline:2px solid var(--tribute-accent-2);outline-offset:2px}html.codedrobe-host-codex a{color:var(--tribute-accent-2)}\nhtml.codedrobe-host-codex pre,html.codedrobe-host-codex code{background:#11100E;color:var(--tribute-text);border-color:var(--tribute-border)}\nhtml.codedrobe-host-codex blockquote{border-left-color:var(--tribute-accent);color:var(--tribute-muted)}html.codedrobe-host-codex ::selection{background:color-mix(in srgb,var(--tribute-accent) 52%,transparent);color:var(--tribute-text)}\nhtml.codedrobe-host-codex .codedrobe-theme-emblem{pointer-events:none;background:var(--codedrobe-image-emblem) center/contain no-repeat}\nhtml.codedrobe-host-codex [data-testid=\"composer\"],html.codedrobe-host-codex [contenteditable=\"true\"],html.codedrobe-host-codex textarea{box-shadow:0 0 0 1px #5D554A,0 18px 48px rgba(0,0,0,.28)}\nhtml.codedrobe-host-codex pre{border-left:3px solid #A72F35}\n@media (prefers-reduced-motion:reduce){html.codedrobe-host-codex *,html.codedrobe-host-codex *::before,html.codedrobe-host-codex *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}\n",
+    "workbuddy": "/* 鹰羽信条 / workbuddy / 原创致敬主题 */\nhtml.codedrobe-host-workbuddy{--tribute-bg:#171614;--tribute-surface:#25231F;--tribute-text:#F5F0E6;--tribute-muted:#B5AA99;--tribute-accent:#A72F35;--tribute-accent-2:#B28B57;--tribute-border:#5D554A;color-scheme:dark}\nhtml.codedrobe-host-workbuddy body{color:var(--tribute-text);background:radial-gradient(circle at 82% 12%,color-mix(in srgb,var(--tribute-accent-2) 18%,transparent),transparent 38%),linear-gradient(135deg,var(--tribute-bg),var(--tribute-surface)) fixed}\nhtml.codedrobe-host-workbuddy body::before{content:\"\";position:fixed;inset:0;z-index:-1;pointer-events:none;background:repeating-linear-gradient(90deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px),repeating-linear-gradient(0deg,transparent 0 47px,color-mix(in srgb,var(--tribute-border) 18%,transparent) 48px);opacity:.55}\nhtml.codedrobe-host-workbuddy main,html.codedrobe-host-workbuddy [role=\"main\"]{background:color-mix(in srgb,var(--tribute-bg) 78%,transparent);backdrop-filter:blur(14px) saturate(118%)}\nhtml.codedrobe-host-workbuddy aside,html.codedrobe-host-workbuddy nav{background:color-mix(in srgb,var(--tribute-surface) 88%,transparent);backdrop-filter:blur(18px) saturate(120%)}\nhtml.codedrobe-host-workbuddy button,html.codedrobe-host-workbuddy input,html.codedrobe-host-workbuddy textarea,html.codedrobe-host-workbuddy [contenteditable=\"true\"],html.codedrobe-host-workbuddy [role=\"textbox\"]{color:var(--tribute-text);border-color:var(--tribute-border);background:color-mix(in srgb,var(--tribute-surface) 91%,transparent)}\nhtml.codedrobe-host-workbuddy button:hover,html.codedrobe-host-workbuddy [aria-selected=\"true\"],html.codedrobe-host-workbuddy [data-state=\"active\"]{border-color:var(--tribute-accent-2);background:color-mix(in srgb,var(--tribute-accent) 18%,var(--tribute-surface))}\nhtml.codedrobe-host-workbuddy :focus-visible{outline:2px solid var(--tribute-accent-2);outline-offset:2px}html.codedrobe-host-workbuddy a{color:var(--tribute-accent-2)}\nhtml.codedrobe-host-workbuddy pre,html.codedrobe-host-workbuddy code{background:#11100E;color:var(--tribute-text);border-color:var(--tribute-border)}\nhtml.codedrobe-host-workbuddy blockquote{border-left-color:var(--tribute-accent);color:var(--tribute-muted)}html.codedrobe-host-workbuddy ::selection{background:color-mix(in srgb,var(--tribute-accent) 52%,transparent);color:var(--tribute-text)}\nhtml.codedrobe-host-workbuddy .codedrobe-theme-emblem{pointer-events:none;background:var(--codedrobe-image-emblem) center/contain no-repeat}\nhtml.codedrobe-host-workbuddy [contenteditable=\"true\"],html.codedrobe-host-workbuddy textarea{box-shadow:0 0 0 1px #5D554A,0 16px 44px rgba(0,0,0,.26)}\nhtml.codedrobe-host-workbuddy aside{border-right:1px solid #5D554A}\n@media (prefers-reduced-motion:reduce){html.codedrobe-host-workbuddy *,html.codedrobe-host-workbuddy *::before,html.codedrobe-host-workbuddy *::after{animation-duration:.01ms!important;transition-duration:.01ms!important}}\n"
+  }
+}

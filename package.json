@@ -1,0 +1,16 @@
+{
+  "name": "interface-theme-pack",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.4"
+  },
+  "scripts": {
+    "build": "node scripts/build-themes.mjs",
+    "validate": "node scripts/validate-themes.mjs",
+    "index": "node scripts/generate-index.mjs",
+    "test": "node --test --test-concurrency=1 tests/*.test.mjs",
+    "check": "npm run build && npm run validate && npm run index && npm test"
+  }
+}
